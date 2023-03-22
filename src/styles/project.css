@@ -1,0 +1,377 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+*button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  font-family: 'TTFirsNeu', 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, p, button {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+img, svg {
+  width: 100%;
+}
+
+input {
+  outline: none;
+  border-color: transparent;
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.project-grid__btn {
+  padding: 14px 19px;
+  margin-left: 4px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  outline: 3px solid #FF6E30;
+  color: #FFFFFF;
+  background-color: transparent;
+  -webkit-transition-property: background-color, outline;
+  transition-property: background-color, outline;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.project-grid__btn:hover {
+  background-color: #FF6E30;
+}
+
+.project-grid__btn:focus {
+  outline: 3px solid #FF6E30;
+  background-color: #BC572B;
+}
+
+.project-grid__btn:active {
+  background-color: #CE4307;
+  outline: 3px solid #CE4307;
+}
+
+.section-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.hero__grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  grid-gap: 30px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.hero__right-grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  grid-gap: 30px;
+  -ms-grid-rows: 1fr 257px;
+      grid-template-rows: 1fr 257px;
+  -ms-grid-columns: 0.5fr 0.5fr;
+      grid-template-columns: 0.5fr 0.5fr;
+}
+
+.hero__grid-works {
+  grid-column: span 2;
+}
+
+.about-grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  grid-gap: 30px;
+  -ms-grid-columns: 0.5fr 0.5fr;
+      grid-template-columns: 0.5fr 0.5fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.project-grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  grid-gap: 30px;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.project-grid__block {
+  grid-column: span 2;
+}
+
+.project-grid__card4, .project-grid__card5 {
+  grid-column: span 6;
+}
+
+.project-grid__card6, .project-grid__card7 {
+  grid-column: span 3;
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto";
+  font-display: swap;
+  src: local("Roboto-Regular"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: bold;
+  font-family: "Roboto";
+  font-display: swap;
+  src: local("Roboto-Bold"), url("../fonts//Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "TTFirsNeu";
+  font-display: swap;
+  src: local("TTFirsNeue-Regular"), url("../fonts/TTFirsNeue-Regular.woff2") format("woff2"), url("../fonts/TTFirsNeue-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: bold;
+  font-family: "TTFirsNeu";
+  font-display: swap;
+  src: local("TTFirsNeue-Regular"), url("../fonts/TTFirsNeue-Bold.woff2") format("woff2"), url("../fonts/TTFirsNeue-Bold.woff") format("woff");
+}
+
+.project {
+  padding-top: 68px;
+  padding-bottom: 34px;
+}
+
+.project h2 {
+  margin-bottom: 12px;
+  color: #202020;
+}
+
+.project-grid__desc {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.project-grid__desc-wrap {
+  background-image: url("../img/calendar.png");
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: left center;
+}
+
+.project-grid__desc-text {
+  margin-top: 10px;
+  margin-bottom: 13px;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 22px;
+  color: #202020;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.project-grid__desc-date {
+  margin-left: 19px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #999999;
+}
+
+.project-grid__block {
+  position: relative;
+}
+
+.project-grid__block .after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  background-color: #333333;
+  color: #FFFFFF;
+  z-index: 0;
+}
+
+.project-grid__card4 .after {
+  width: 150px;
+}
+
+.project-grid__card5 .after {
+  width: 50px;
+}
+
+.project-grid__card4 {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-height: 298px;
+  background-image: url("../img/project-back-bot1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-grid__card4 h3 {
+  margin-top: 1px;
+}
+
+.project-grid__card4 div {
+  background-image: url("../img/calendar_wight.png");
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: left center;
+}
+
+.project-grid__card4 div span {
+  margin-left: 19px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.project-grid__card4 button {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.project-grid__h3 {
+  margin-bottom: 5px;
+  width: 100%;
+  max-width: 290px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.project-grid__bottom {
+  width: 100%;
+  max-width: 295px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.project-grid__btn {
+  padding: 13px 21px;
+  margin-top: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.project-grid__card5 {
+  padding-top: 23px;
+  padding-left: 30px;
+  padding-bottom: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  background-image: url("../img/project-back-top1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-grid__card5 div {
+  background-image: url("../img/calendar_wight.png");
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: left center;
+}
+
+.project-grid__card5 div span {
+  margin-left: 19px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=project.css.map */

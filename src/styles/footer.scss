@@ -1,0 +1,68 @@
+@import "_common.scss";
+@import "_grid.scss";
+@import "_fonts.scss";
+@import "_mixin.scss";
+@import "_variables.scss";
+
+.footer {
+  padding-top: 26px;
+  padding-bottom: 16px;
+  background-color: $darkBack;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: $containerMaxWidth;
+    margin: 0 auto;
+  }
+  &__logo-desk {
+    margin-top: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $input;
+  }
+  &__text {
+    margin-right: 124px;
+    width: 100%;
+    max-width: 360px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $placeholder;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: -4px;
+  }
+  &-social__list {
+    display: flex;
+    margin-top: 8px;
+  }
+  &-social__item:not(:last-child) {
+    margin-right: 21px;
+  }
+  &-social__link {
+    display: block;
+    outline: none;
+    fill: $placeholder;
+  }
+}
+
+.footer-social__link:focus svg {
+  fill: $btnColorHover;
+}
+
+.footer-social__link:active svg {
+  fill: $btnColorActive;
+}
+
+.footer-social__link:hover svg {
+  fill: $btnColor;
+}
+
+#form__wrap {
+  margin-top: -6px;
+}

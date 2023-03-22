@@ -1,0 +1,82 @@
+@import '_common.scss';
+@import '_grid.scss';
+@import '_fonts.scss';
+@import '_mixin.scss';
+@import '_variables.scss';
+
+.about-btn {
+	margin-top: auto;
+	width: 100%;
+	max-width: 126px;
+}
+
+.about {
+	padding-top: 31px;
+	padding-bottom: 70px;
+	background-color: $darkBack;
+	h2 {
+		margin-bottom: 5px;
+	}
+	&-grid__left {
+		font-family: 'Roboto';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 28px;
+	}
+}
+
+.about-grid__right-heading {
+	margin-bottom: 16px;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 22px;
+}
+
+.about-grid__right::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 25px;
+	max-height: 252px;
+	background-image: url("../img/camera1920.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.about-grid__form {
+	display: flex;
+	justify-content: space-between;
+	label {
+		width: 100%;
+		max-width: 474px;
+		margin-right: 20px;
+		input {
+			padding-top: 15px;
+			padding-left: 23px;
+			padding-bottom: 15px;
+			width: 100%;
+			background-color: $form;
+			font-family: 'Roboto';
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			color: $wight;
+			border: 1px solid transparent;
+			&:hover {
+				color: $btnColor;
+			}
+			&:focus {
+				border-color: $btnColor;
+			}
+			&:active {
+				border-color: $btnColor;
+			}
+			&::placeholder {
+				color: $placeholder;
+			}
+
+		}
+	}
+}

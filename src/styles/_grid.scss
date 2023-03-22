@@ -1,0 +1,42 @@
+@import "_variables.scss";
+@import "_mixin.scss";
+
+.hero__grid {
+  @include grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero__right-grid {
+  @include grid;
+  grid-template-rows: 1fr 257px;
+  grid-template-columns: 0.5fr 0.5fr;
+}
+
+.hero__grid-works {
+  grid-column: span 2;
+}
+
+.about-grid {
+  @include grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: auto;
+}
+
+.project-grid {
+  @include grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.project-grid__item {
+  grid-column: span 2;
+}
+
+.project-grid__card4,
+.project-grid__card5 {
+  grid-column: span 6;
+}
+
+.project-grid__card6,
+.project-grid__card7 {
+  grid-column: span 3;
+}

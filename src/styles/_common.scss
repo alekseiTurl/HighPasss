@@ -1,0 +1,144 @@
+@import "_variables.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: $wight;
+  font-family: "TTFirsNeu", "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  font-style: normal;
+  color: $wight;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+button {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+img,
+svg {
+  width: 100%;
+}
+
+input {
+  outline: none;
+  border-color: transparent;
+}
+
+.container {
+  max-width: $containerMaxWidth;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+%btn {
+  padding: 16px 22px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  outline: 3px solid transparent;
+  color: $wight;
+  background-color: $btnColor;
+  transition-property: background-color, outline;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+%btn:hover {
+  background-color: $btnColorHover;
+}
+
+%btn:focus {
+  outline: 3px solid $btnColorActive;
+  outline-offset: -3px;
+  border: none;
+}
+
+%btn:active {
+  background-color: $btnColorActive;
+}
+
+%btn-transparent {
+  padding: 14px 19px;
+  margin-left: 4px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  outline: 3px solid $btnColor;
+  color: $wight;
+  background-color: transparent;
+  transition-property: background-color, outline;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+%btn-transparent:hover {
+  background-color: $btnColor;
+}
+
+%btn-transparent:focus {
+  outline: 3px solid $btnColor;
+  background-color: $btnColorHover;
+}
+
+%btn-transparent:active {
+  background-color: $btnColorActive;
+  outline: 3px solid $btnColorActive;
+}
+
+.section-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}

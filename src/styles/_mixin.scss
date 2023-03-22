@@ -1,0 +1,45 @@
+@mixin grid {
+	display: grid;
+	margin: 0;
+	grid-gap: $gridGutter;
+}
+
+@mixin after {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 7px;
+	right: 7px;
+	background-color: $afterBack;
+	color: $wight;
+  z-index: 0;
+}
+
+@mixin calendar-wrap {
+	background-image: url("../img/calendar.png");
+	background-repeat: no-repeat;
+	background-size: 14px 14px;
+	background-position: left center;
+}
+
+@mixin calendar-style {
+	margin-left: 19px;
+	font-size: 12px;
+	line-height: 22px;
+	color: $spanColor;
+}
+
+@mixin calendar-wrap_wight {
+	background-image: url("../img/calendar_wight.png");
+	background-repeat: no-repeat;
+	background-size: 14px 14px;
+	background-position: left center;
+}
+
+@mixin calendar-style_wight {
+	margin-left: 19px;
+	font-size: 12px;
+	line-height: 22px;
+	color: $wight;
+}

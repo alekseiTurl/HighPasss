@@ -1,0 +1,271 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+*button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  font-family: 'TTFirsNeu', 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, p, button {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+img, svg {
+  width: 100%;
+}
+
+input {
+  outline: none;
+  border-color: transparent;
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.section-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.hero__grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  grid-gap: 30px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.hero__right-grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  grid-gap: 30px;
+  -ms-grid-rows: 1fr 257px;
+      grid-template-rows: 1fr 257px;
+  -ms-grid-columns: 0.5fr 0.5fr;
+      grid-template-columns: 0.5fr 0.5fr;
+}
+
+.hero__grid-works {
+  grid-column: span 2;
+}
+
+.about-grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  grid-gap: 30px;
+  -ms-grid-columns: 0.5fr 0.5fr;
+      grid-template-columns: 0.5fr 0.5fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.project-grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  grid-gap: 30px;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.project-grid__block {
+  grid-column: span 2;
+}
+
+.project-grid__card4, .project-grid__card5 {
+  grid-column: span 6;
+}
+
+.project-grid__card6, .project-grid__card7 {
+  grid-column: span 3;
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto";
+  font-display: swap;
+  src: local("Roboto-Regular"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: bold;
+  font-family: "Roboto";
+  font-display: swap;
+  src: local("Roboto-Bold"), url("../fonts//Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "TTFirsNeu";
+  font-display: swap;
+  src: local("TTFirsNeue-Regular"), url("../fonts/TTFirsNeue-Regular.woff2") format("woff2"), url("../fonts/TTFirsNeue-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: bold;
+  font-family: "TTFirsNeu";
+  font-display: swap;
+  src: local("TTFirsNeue-Regular"), url("../fonts/TTFirsNeue-Bold.woff2") format("woff2"), url("../fonts/TTFirsNeue-Bold.woff") format("woff");
+}
+
+.about-btn {
+  margin-top: auto;
+  width: 100%;
+  max-width: 126px;
+}
+
+.about {
+  padding-top: 31px;
+  padding-bottom: 70px;
+  background-color: #202020;
+}
+
+.about h2 {
+  margin-bottom: 5px;
+}
+
+.about-grid__left {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.about-grid__right-heading {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 22px;
+}
+
+.about-grid__right::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 25px;
+  max-height: 252px;
+  background-image: url("../img/camera1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-grid__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-grid__form label {
+  width: 100%;
+  max-width: 474px;
+  margin-right: 20px;
+}
+
+.about-grid__form label input {
+  padding-top: 15px;
+  padding-left: 23px;
+  padding-bottom: 15px;
+  width: 100%;
+  background-color: #4A4A4A;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+}
+
+.about-grid__form label input:hover {
+  color: #FF6E30;
+}
+
+.about-grid__form label input:focus {
+  border-color: #FF6E30;
+}
+
+.about-grid__form label input:active {
+  border-color: #FF6E30;
+}
+
+.about-grid__form label input::-webkit-input-placeholder {
+  color: #CACACA;
+}
+
+.about-grid__form label input:-ms-input-placeholder {
+  color: #CACACA;
+}
+
+.about-grid__form label input::-ms-input-placeholder {
+  color: #CACACA;
+}
+
+.about-grid__form label input::placeholder {
+  color: #CACACA;
+}
+/*# sourceMappingURL=about.css.map */

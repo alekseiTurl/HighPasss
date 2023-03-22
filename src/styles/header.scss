@@ -1,0 +1,179 @@
+@import "_common.scss";
+@import "_grid.scss";
+@import "_fonts.scss";
+@import "_mixin.scss";
+
+header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: $darkBack;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  color: $wight;
+}
+
+.header__nav {
+  margin-right: 50px;
+  margin-top: 6px;
+}
+
+.header__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  .header__nav-item {
+    font-family: "TTFirsNeu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .header__nav-item:not(:last-child) {
+    margin-right: 79px;
+  }
+}
+
+.header__nav-last {
+  display: none;
+}
+
+.header__nav-link {
+  color: inherit;
+  outline: 5px solid transparent;
+  background-color: transparent;
+  transition-property: color, background-color, outline;
+  transition-duration: 0.35s;
+  transition-timing-function: ease-in-out;
+}
+
+.header__nav-link:hover {
+  color: $btnColor;
+}
+
+.header__nav-link:focus {
+  background-color: $btnColorHover;
+  outline: 5px solid $btnColorHover;
+  color: $wight;
+}
+
+.header__nav-link:active {
+  color: $btnColorActive;
+}
+
+.logo {
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 190px;
+  height: 30px;
+}
+
+.logo:focus {
+  outline: 1px solid $btnColorActive;
+  outline-offset: 3px;
+}
+
+.header__nav-call {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  right: 21px;
+  display: none;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  max-width: 340px;
+  background-color: $darkBack;
+  transform: translateY(-50%);
+  transform-origin: right;
+}
+
+.form.is-opened {
+  display: flex;
+  margin-top: 36px;
+  animation-name: search-open;
+  animation-duration: 0.3s;
+}
+
+.form.is-closed {
+  animation-name: search-close;
+  animation-duration: 0.3s;
+}
+
+.search-icon {
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+
+#svg--search:hover path {
+  fill: $btnColor;
+}
+
+.search-input {
+  margin-right: 30px;
+  padding-bottom: 3px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: $wight;
+  border-bottom: 1px solid $wight;
+  background-color: $darkBack;
+}
+
+.search-input:hover,
+.search-input:focus {
+  border-bottom: 1px solid $btnColor;
+}
+
+.search-input:active {
+  border-bottom: 1px solid $btnColorActive;
+}
+
+.search-btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#svg--search-close:hover circle {
+  fill: $btnColor;
+}
+
+.search-btn {
+  margin-right: 10px;
+}
+
+@keyframes search-open {
+  from {
+    transform: translateY(-50%) scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-50%) scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes search-close {
+  from {
+    transform: translateY(-50%) scaleX(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-50%) scaleX(0);
+    opacity: 0;
+  }
+}

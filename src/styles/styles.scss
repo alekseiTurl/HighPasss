@@ -1,0 +1,1012 @@
+@import "vendor/normalize.css";
+@import "_common.scss";
+@import "_grid.scss";
+@import "_fonts.scss";
+@import "_mixin.scss";
+@import "_variables.scss";
+@import "header.scss";
+@import "hero.scss";
+@import "about.scss";
+@import "project.scss";
+@import "contacts.scss";
+@import "footer.scss";
+
+@media (max-width: 1350px) {
+  .container,
+  .contacts,
+  .footer {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+  .map {
+    max-width: 740px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .logo {
+    width: 167px;
+    height: 32px;
+  }
+
+  header {
+    padding-bottom: 22px;
+  }
+
+  .header {
+    &__nav {
+      margin-top: 5px;
+      &-list {
+        li:not(:last-child) {
+          margin-right: 33px;
+        }
+      }
+    }
+    &-social {
+      display: none;
+    }
+  }
+
+  .search {
+    margin-top: 4px;
+  }
+
+  .hero {
+    padding-top: 34px;
+    padding-bottom: 68px;
+    &__grid-left {
+      background-image: url("../img/works1(1).jpg");
+      max-height: 623px;
+      div {
+        padding-left: 30px;
+        padding-bottom: 31px;
+        h2 {
+          margin-bottom: 17px;
+          font-size: 34px;
+        }
+        p {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    &__right {
+      &-grid {
+        grid-template-rows: 1fr 0.5fr;
+      }
+      &-heading {
+        margin-top: 1px;
+        line-height: 24px;
+        margin-bottom: 27px;
+      }
+    }
+  }
+
+  .hero__grid-works {
+    max-height: 331px;
+  }
+
+  .hero__grid-works2,
+  .hero__grid-works3 {
+    max-height: 186px;
+  }
+
+  .about {
+    padding-top: 29px;
+    padding-bottom: 61px;
+    h3 {
+      padding-top: 23px;
+    }
+    &-btn {
+      padding: 15px 22px;
+    }
+    &-grid {
+      grid-template-columns: 48% 49%;
+      &__right {
+        margin-left: 4px;
+        height: auto;
+      }
+      &__right::before {
+        margin-bottom: 0;
+        background-image: url("../img/camera1024.jpg");
+        max-height: 330px;
+      }
+      &__form {
+        flex-wrap: wrap;
+        label input {
+          margin-bottom: 20px;
+          padding-left: 22px;
+          width: 77%;
+        }
+      }
+    }
+  }
+
+  .project-grid {
+    &__desc-text {
+      
+      margin-top: 12px;
+      -webkit-line-clamp: 2;
+    }
+    &__card1 {
+      grid-column: span 3;
+    }
+    &__card2 {
+      grid-column: span 3;
+    }
+    &__card3 {
+      grid-column: span 6;
+    }
+    &__card4 {
+      order: 2;
+      grid-column: span 7;
+      background-image: url("../img/project-back-bot1024.jpg");
+    }
+    &__card5 {
+      grid-column: span 7;
+      background-image: url("../img/project-back-top1024.jpg");
+    }
+    &__card6 {
+      grid-column: span 5;
+    }
+    &__card7 {
+      grid-column: span 5;
+    }
+  }
+
+  .map {
+    width: 100%;
+    max-width: 61%;
+  }
+
+  #form__wrap {
+    margin-top: -7px;
+  }
+
+  .contacts {
+    padding-bottom: 68px;
+    &-modal {
+      padding-top: 25px;
+      padding: 25px 210px 16px 30px;
+      padding-left: 30px;
+      bottom: 0;
+      width: 100%;
+      height: unset;
+      &__adres {
+        max-width: 350px;
+      }
+    }
+    &-grid {
+      &__headingh3 {
+        margin-top: -8px;
+      }
+      &__block-form {
+        width: 36%;
+      }
+      &-form {
+        textarea {
+          padding-left: 21px;
+        }
+        label input {
+          padding-top: 14px;
+          padding-left: 21px;
+        }
+      }
+    }
+  }
+
+  .contact-tell {
+    display: inline;
+    white-space: nowrap;
+  }
+
+  .footer {
+    padding-top: 25px;
+    .logo {
+      height: 28px;
+      margin-top: 5px;
+    }
+    &__logo-desk {
+      margin-top: -1px;
+    }
+    &__text {
+      margin-right: -68px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .footer__text {
+    display: none;
+  }
+}
+
+@media (max-width: 870px) {
+  .container {
+    padding-right: 27px;
+    padding-left: 27px;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .search {
+    margin-top: 1px;
+  }
+
+  header {
+    padding-bottom: 25px;
+  }
+
+  .header__nav {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 12px 27px;
+    width: 100%;
+    background-color: $form;
+    &-list {
+      justify-content: space-between;
+      li:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .hero {
+    padding-top: 81px;
+    padding-bottom: 68px;
+    &__right {
+      &-grid {
+        grid-template-rows: 0.6fr 0.5fr;
+      }
+      &-heading {
+        margin-top: -2px;
+        margin-bottom: 17px;
+        line-height: 23px;
+        font-size: 22px;
+      }
+    }
+    &__grid {
+      &-left {
+        max-height: 476px;
+        div {
+          padding-left: 29px;
+          padding-bottom: 30px;
+          h2 {
+            margin-bottom: 23px;
+            max-width: 240px;
+            font-size: 34px;
+            line-height: 90%;
+          }
+          p {
+            margin-bottom: 15px;
+          }
+        }
+      }
+      &-works {
+        max-height: 228px;
+      }
+      &-works2 {
+        max-height: 133px;
+      }
+      &-works3 {
+        max-height: 133px;
+      }
+    }
+  }
+
+  .about {
+    padding-top: 30px;
+    padding-bottom: 62px;
+    h3 {
+      margin-top: 1px;
+      margin-left: -2px;
+    }
+    &-grid {
+      grid-template-columns: 48% 48%;
+      &__right {
+        margin-left: -1px;
+        margin-top: -3px;
+        height: 100%;
+        max-height: 400px;
+      }
+      &__right::before {
+        max-height: 569px;
+        width: 100%;
+        background-image: url("../img/camera768.jpg");
+      }
+      &__form label input {
+        padding-left: 22px;
+        width: 100%;
+      }
+      &__form label {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .project {
+    padding-bottom: 39px;
+    &-grid {
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      &__item {
+        grid-column: span 4;
+      }
+      &__bottom {
+        max-width: 292px;
+      }
+      &__btn {
+        padding: 12px 19px;
+      }
+      &__desc {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        max-height: 111px;
+        &-text {
+          margin-bottom: 0;
+          -webkit-line-clamp: 3;
+        }
+        &-wrap {
+          margin-top: auto;
+        }
+      }
+      &__card4 {
+        padding-top: 0;
+        padding-bottom: 32px;
+        max-height: 300px;
+        background-image: url("../img/project-back-bot768.jpg");
+        grid-column: span 12;
+        div {
+          margin-top: 31px;
+          span {
+            margin-left: 16px;
+          }
+        }
+      }
+      &__card5 {
+        padding-top: 0;
+        padding-left: 30px;
+        padding-bottom: 34px;
+        background-image: url("../img/project-back-top768.jpg");
+        grid-column: span 12;
+        div {
+          margin-top: 32px;
+        }
+      }
+      &__card6 {
+        grid-column: span 6;
+        grid-row: unset;
+        div {
+          max-height: 117px;
+        }
+      }
+      &__card7 {
+        grid-column: span 6;
+        grid-row: unset;
+        div {
+          max-height: 117px;
+        }
+      }
+    }
+  }
+
+  .contacts {
+    padding-right: 28px;
+    padding-left: 26px;
+    padding-bottom: 68px;
+    h2 {
+      margin-bottom: 22px;
+    }
+    &-grid {
+      flex-direction: column;
+      &__headingh3 {
+        margin-top: 0;
+      }
+      &__block-form {
+        width: 66%;
+      }
+      &__form {
+        max-width: 466px;
+        label input {
+          padding-left: 22px;
+          padding-top: 13px;
+        }
+        textarea {
+          padding-left: 23px;
+          padding-top: 13px;
+          margin-bottom: 19px;
+        }
+      }
+    }
+    &-modal {
+      padding: 25px 277px 16px 30px;
+      &__adres {
+        max-width: 420px;
+      }
+    }
+  }
+  .contact-tell {
+    display: flex;
+    align-items: center;
+  }
+
+  .map {
+    max-width: 714px;
+    max-height: 460px;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  #form__wrap {
+    width: 65%;
+  }
+
+  .footer {
+    padding-left: 27px;
+    padding-top: 26px;
+    .logo {
+      width: 166px;
+      height: 27px;
+    }
+    &__wrap {
+      margin-top: 0;
+      &__list {
+        margin-top: 13px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-grid__right {
+    max-height: 569px;
+  }
+  .project-grid {
+    grid-template-rows: 295px 300px 300px 300px;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding-right: 21px;
+    padding-left: 21px;
+  }
+
+  .logo {
+    height: 18px;
+    width: 112px;
+  }
+
+  header {
+    padding-top: 26px;
+    padding-bottom: 19px;
+  }
+
+  .header__nav {
+    padding: 14px 22px;
+    top: 37px;
+    &-last {
+      display: block;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: unset;
+      height: 100%;
+      margin: 0;
+      overflow-y: auto;
+      li:not(:first-child) {
+        margin-top: 30px;
+      }
+    }
+    &-call {
+      display: block;
+    }
+  }
+
+  .search-icon {
+    width: 21px;
+    height: 21px;
+  }
+
+  .search {
+    margin-top: -1px;
+  }
+
+  .form {
+    top: 40%;
+    right: 2px;
+  }
+
+  .form.is-opened {
+    margin-top: 0;
+    z-index: 1;
+  }
+
+  .burger {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 20px;
+    height: 18px;
+    color: $wight;
+    transition: color 0.5s ease;
+  }
+
+  .burger:focus {
+    outline: 2px solid #ff6e30;
+    outline-offset: 5px;
+  }
+
+  .burger::before,
+  .burger::after {
+    content: "";
+  }
+
+  .burger span,
+  .burger::before,
+  .burger::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: currentColor;
+    transform-origin: right;
+    transition: transform 0.2s ease;
+  }
+
+  .burger::after {
+    width: 50%;
+  }
+
+  .burger::before {
+    transform: translateY(calc(-100% - 6px));
+  }
+
+  .burger span {
+    top: calc(50% - 1px);
+    transition: opacity 0.5s ease, transform 0.2s ease;
+  }
+
+  .burger::after {
+    transform: translateY(calc(100% + 5px));
+  }
+
+  .burger:active {
+    color: $btnColor;
+  }
+
+  .burger:active span {
+    transform: scaleX(calc(25 / 30));
+  }
+
+  .burger:active::after {
+    transform: scaleX(calc(18 / 30)) translateY(calc(100% + 5px));
+  }
+
+  .is-opened.burger span,
+  .is-opened.burger::before,
+  .is-opened.burger::after {
+    transform-origin: center;
+  }
+
+  .is-opened.burger::before {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .burger.is-opened span {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  .is-opened.burger::after {
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  .burger.is-opened {
+    background-color: #808080;
+    outline: 5px solid #808080;
+    outline-offset: -1px;
+    border-radius: 100%;
+  }
+
+  .burger.is-opened:hover,
+  .burger.is-opened:focus {
+    background-color: $btnColor;
+    outline: 5px solid $btnColor;
+    outline-offset: -1px;
+    border-radius: 100%;
+  }
+
+  .menu-wrap {
+    position: fixed;
+    left: 0;
+    top: 69px;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    padding: 50px 30px 30px 22px;
+    background-color: $darkBack;
+    transform: translateX(-100%);
+    a {
+      margin-left: 4px;
+    }
+  }
+
+  .menu-wrap.is-opened {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateX(0);
+    animation-name: menu-open;
+    animation-duration: 0.3s;
+    height: 90vh;
+    span {
+      margin-top: auto;
+    }
+  }
+
+  .menu-wrap.is-closed {
+    animation-name: menu-close;
+    animation-duration: 0.3s;
+  }
+
+  @keyframes menu-open {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes menu-close {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .hero {
+    padding-top: 76px;
+    padding-bottom: 50px;
+    &__grid {
+      grid-template-rows: 422px 1fr;
+      grid-template-columns: none;
+      &-left {
+        max-height: 421px;
+        background-image: url("../img/works1(2).jpg");
+        div {
+          padding-bottom: 30px;
+          padding-left: 29px;
+          h2 {
+            margin-bottom: 12px;
+            max-width: 169px;
+            font-size: 24px;
+            line-height: 110%;
+          }
+          p {
+            margin-bottom: 8px;
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+      }
+      &-works {
+        max-height: 186px;
+      }
+      &-works2 {
+        max-height: 105px;
+      }
+      &-works3 {
+        max-height: 105px;
+      }
+    }
+    &__right {
+      &-grid {
+        margin-top: -3px;
+      }
+      &-heading {
+        margin-top: 3px;
+        line-height: 20px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .hero__grid-left {
+    .after {
+      width: 95px;
+      height: 22px;
+      top: 5px;
+      right: 5px;
+      font-size: 10px;
+    }
+  }
+
+  .about-btn,
+  .hero-btn {
+    padding: 11px 23px;
+    font-size: 14px;
+  }
+
+  .section-heading {
+    font-size: 18px;
+  }
+
+  .about {
+    padding-top: 28px;
+    padding-bottom: 0;
+    h2 {
+      margin-bottom: 1px;
+    }
+    h3 {
+      padding-top: 25px;
+      padding-bottom: 15px;
+      font-size: 18px;
+    }
+    &-btn {
+      max-width: 115px;
+    }
+    &-grid {
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 500px;
+      grid-gap: 23px;
+      &__left {
+        font-size: 14px;
+        line-height: 25px;
+      }
+      &__right {
+        max-height: 278px;
+        grid-row: 2 / span 1;
+        &-heading {
+          margin-bottom: -1px;
+        }
+      }
+      &__form label input {
+        padding-left: 23px;
+        padding-top: 10px;
+        padding-bottom: 8px;
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+  }
+
+  .about-grid__right::before {
+    max-height: 280px;
+    width: 100%;
+    background-image: url(../img/camera768.jpg);
+  }
+
+  .project {
+    padding-top: 45px;
+    &-grid {
+      grid-gap: 25px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.8fr 0.8fr 0.8fr 1.4fr 1fr 1fr 1.4fr;
+      &__h3 {
+        margin-bottom: 11px;
+        margin-top: 6px;
+      }
+      &__bottom {
+        width: 98%;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 16px;
+      }
+      &__btn {
+        margin-top: 0;
+        padding: 8px 13px;
+      }
+      &__desc {
+        max-height: 88px;
+        &-text {
+          margin-bottom: 10px;
+        }
+      }
+      &__item {
+        grid-column: span 12;
+        .after {
+          height: 22px;
+          width: 78px;
+          top: 5px;
+          right: 4px;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+      &__card1 {
+        grid-row: 1;
+      }
+      &__card2 {
+        grid-row: 2;
+      }
+      &__card3 {
+        grid-row: 3;
+      }
+      &__card4 {
+        padding-bottom: 33px;
+        padding-left: 28px;
+        background-image: url("../img/project-back-bot320.jpg");
+        grid-row: 7;
+        height: 100%;
+        max-height: 420px;
+        div {
+          margin-top: auto;
+        }
+        h3 {
+          margin-top: 5px;
+          margin-bottom: 9px;
+        }
+        p {
+          margin-bottom: 24px;
+          width: 86%;
+        }
+        button {
+          padding: 8px 14px;
+        }
+      }
+      &__card5 {
+        padding-left: 29px;
+        padding-bottom: 33px;
+        background-image: url("../img/project-back-top320.jpg");
+        grid-row: 4;
+        height: 100%;
+        max-height: 417px;
+        div {
+          margin-top: auto;
+        }
+        span {
+          margin-left: 15px;
+        }
+      }
+      &__card6 {
+        grid-row: 5;
+        p {
+          margin-left: 2px;
+        }
+      }
+      &__card7 {
+        grid-row: 6;
+        p {
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+
+  .project-grid__card5 {
+    .after {
+      height: 21px;
+    }
+  }
+
+  .project-grid__card4 {
+    .after {
+      padding: 5px 14px;
+      height: 19px;
+      width: 124px;
+      font-size: 12px;
+    }
+  }
+
+  .map {
+    margin-bottom: 32px;
+    height: 473px;
+  }
+
+  .contacts {
+    padding: 5px 0 50px;
+    h2 {
+      padding-left: 20px;
+      margin-bottom: 9px;
+    }
+    &-grid {
+      &__block-form {
+        width: 100%;
+      }
+      &__headingh3 {
+        padding-left: 21px;
+        padding-right: 21px;
+        margin-bottom: 0;
+        font-size: 18px;
+      }
+      &__desk {
+        font-size: 14px;
+        line-height: 18px;
+      }
+      &__form {
+        padding-left: 21px;
+        padding-right: 21px;
+        margin-top: 8px;
+        max-width: 100%;
+        label input {
+          padding-top: 10px;
+          padding-bottom: 8px;
+          font-size: 14px;
+        }
+        textarea {
+          padding-top: 9px;
+          font-size: 14px;
+        }
+      }
+    }
+    &-modal {
+      padding: 26px 34px 27px 19px;
+      bottom: 0;
+      &__heading {
+        margin-bottom: 11px;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &__close {
+        top: 19px;
+        right: 20px;
+      }
+      &__adres {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -6px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      &__call {
+        margin-top: 10px;
+      }
+      &__tell {
+        margin-left: -8px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  #form__wrap {
+    padding-left: 21px;
+    padding-right: 21px;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 16px 6px 0 0;
+    .logo {
+      width: 105px;
+      height: 18px;
+      margin-bottom: 10px;
+    }
+    &__logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 9px;
+      padding-bottom: 14px;
+      order: 1;
+      background-color: $form;
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    &-social {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding-bottom: 14px;
+      margin-top: -2px;
+    }
+    &__wrap {
+      margin-top: 15px;
+      margin-bottom: 14px;
+    }
+  }
+}

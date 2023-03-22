@@ -1,0 +1,214 @@
+@import "_common.scss";
+@import "_grid.scss";
+@import "_fonts.scss";
+@import "_mixin.scss";
+@import "_variables.scss";
+
+.contacts {
+  max-width: $containerMaxWidth;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  h2 {
+    margin-bottom: 22px;
+    color: $darkBack;
+  }
+  &-grid {
+    display: flex;
+    justify-content: space-between;
+    &__block-form {
+      width: 32%;
+      height: 100%;
+    }
+    &__input {
+      margin-bottom: 22px;
+    }
+  }
+  &-grid__headingh3 {
+    margin-top: -5px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+    color: $darkBack;
+  }
+  &-grid__desk {
+    margin-bottom: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $spanColor;
+  }
+  &-grid__form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    label {
+      position: relative;
+      input {
+        padding-top: 13px;
+        padding-left: 20px;
+        padding-bottom: 14px;
+        margin-bottom: 20px;
+        width: 100%;
+        background-color: $input;
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $darkBack;
+        outline: none;
+        &:hover {
+          color: $btnColor;
+        }
+        &:focus {
+          border: 1px solid $btnColor;
+        }
+        &:active {
+          border: 1px solid $btnColor;
+        }
+        &::placeholder {
+          color: $spanColor;
+        }
+      }
+    }
+    textarea {
+      padding-top: 14px;
+      padding-left: 21px;
+      padding-bottom: 15px;
+      width: 100%;
+      min-height: 150px;
+      background-color: $input;
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: $darkBack;
+      outline: none;
+      border: 1px solid transparent;
+      resize: none;
+      &:hover {
+        color: $btnColor;
+      }
+      &:focus {
+        border-color: $btnColor;
+      }
+      &:active {
+        border-color: $btnColor;
+      }
+      &::placeholder {
+        color: $spanColor;
+      }
+    }
+  }
+}
+
+.is-label-invalid {
+  position: absolute;
+  bottom: 100%;
+  left: 5%;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 11px;
+  color: $error;
+}
+
+.is-invalid {
+  border: 1px solid $error;
+}
+
+.close-btn-svg {
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  svg {
+    fill: $placeholder;
+  }
+}
+
+.close-btn svg {
+  fill: $placeholder;
+}
+
+.close-btn:focus svg {
+  fill: $btnColorHover;
+}
+
+.close-btn:hover svg {
+  fill: $btnColorActive;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  max-width: 850px;
+}
+
+.contacts-modal {
+  padding: 175px 50px 101px 60px;
+  position: absolute;
+  z-index: 2;
+  width: 48%;
+  height: 100%;
+  background: rgba(32, 32, 32, 0.85);
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    svg {
+      fill: $placeholder;
+    }
+  }
+  &__heading {
+    margin-bottom: 5px;
+    font-size: 24px;
+    line-height: 22px;
+  }
+  &__adres {
+    margin-bottom: 1px;
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 28px;
+    color: $placeholder;
+  }
+  &__call {
+    display: flex;
+  }
+  &__tell {
+    margin-left: 1px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.contact-call {
+  color: $btnColor;
+}
+.contact-tell {
+  display: flex;
+  align-items: center;
+}
+
+.call {
+  width: 22px;
+  height: 22px;
+}
+
+.contacts-modal.active,
+.contacts-modal__close.active {
+  display: none;
+}
+
+.contacts-modal__close:focus svg {
+  border: none;
+  outline: none;
+  fill: $btnColorHover;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
