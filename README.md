@@ -1,5 +1,5 @@
 
-# ![highpass](https://ltdfoto.ru/images/2023/04/01/Logo.png)
+# ![highpass](https://imageup.ru/img157/4339584/logo-2.jpg.html)
 ## Лендинг одностраничного сайта для фотостудии HIghPass. Сборка проекта на GULP.
 <br/>
 
