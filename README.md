@@ -1,5 +1,5 @@
 
-# ![highpass](https://imageup.ru/img157/4339584/logo-2.jpg.html)
+# ![highpass]([https://imageup.ru/img157/4339584/logo-2.jpg.html](https://imageup.ru/img157/4339584/logo-2.jpg))
 ## Лендинг одностраничного сайта для фотостудии HIghPass. Сборка проекта на GULP.
 <br/>
 
